@@ -383,7 +383,7 @@ static void connected(struct bt_conn *conn, uint8_t err) {
 
     LOG_DBG("Connected %s", log_strdup(addr));
 
-    if (bt_conn_set_security(conn, BT_SECURITY_L4)) {
+    if (bt_conn_set_security(conn, BT_SECURITY_L3)) {
         LOG_ERR("Failed to set security");
     }
 
