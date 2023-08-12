@@ -4,10 +4,12 @@ manifest:
       url-base: https://github.com/zephyrproject-rtos
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: vbn
+      url-base: https://github.com/vbn
   projects:
     - name: zephyr
-      remote: zmkfirmware
-      revision: v3.2.0+zmk-fixes
+      remote: vbn
+      revision: v3.2.0+zmk-fixes-suspend-test
       clone-depth: 1
       import:
         name-blocklist:
